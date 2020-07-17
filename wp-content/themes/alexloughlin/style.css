@@ -533,7 +533,7 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #0084cc;
 }
 
 a:visited {
@@ -774,7 +774,7 @@ textarea {
 }
 
 .bypostauthor {
-	display: block;
+	display: inline-block;
 }
 
 /* Widgets
