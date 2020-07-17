@@ -41,11 +41,11 @@
 			$alexloughlin_description = get_bloginfo( 'description', 'display' );
 			if ( $alexloughlin_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $alexloughlin_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<!-- <nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'alexloughlin' ); ?></button>
 			<?php
 			wp_nav_menu(
@@ -55,5 +55,5 @@
 				)
 			);
 			?>
-		</nav><!-- #site-navigation -->
+		</nav><!-- #site-navigation --> 
 	</header><!-- #masthead -->

@@ -107,3 +107,23 @@
 		flex: 1 0 50%;
 	}
 }
+
+.site-header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px 0px;
+}
+
+.site-title{
+	margin: 0;
+	a{
+		text-decoration: none;
+		font-size: 2rem;
+		font-weight: 800;
+	}
+	a:visited{
+		color:$black;
+
+	}
+}

@@ -475,6 +475,24 @@ body {
 	background: #fff;
 }
 
+.site-main,
+.site-info {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+
+	.site-main,
+	.site-info {
+		padding: 0 25px;
+	}
+}
+
+.site-footer {
+	padding: 25px 0;
+}
+
 hr {
 	background-color: #ccc;
 	border: 0;
@@ -534,10 +552,11 @@ table {
 --------------------------------------------- */
 a {
 	color: #0084cc;
+	text-decoration: none;
 }
 
 a:visited {
-	color: #800080;
+	color: #0084cc;
 }
 
 a:hover,
@@ -553,6 +572,11 @@ a:focus {
 a:hover,
 a:active {
 	outline: 0;
+}
+
+.entry-title a {
+	color: #000;
+	text-decoration: underline;
 }
 
 /* Forms
@@ -741,6 +765,27 @@ textarea {
 	flex: 1 0 50%;
 }
 
+.site-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px 0;
+}
+
+.site-title {
+	margin: 0;
+}
+
+.site-title a {
+	text-decoration: none;
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.site-title a:visited {
+	color: #000;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -765,6 +810,15 @@ textarea {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.entry-footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.entry-footer span {
+	margin-top: 10px;
 }
 
 /* Comments
