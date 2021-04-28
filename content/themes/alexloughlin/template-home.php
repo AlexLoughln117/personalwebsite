@@ -21,45 +21,14 @@ html {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
 }
-
-section {
-  padding: 1rem;
-  height: 100vh;
-  scroll-snap-align: start;
-  text-align: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-1{   
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-}
-.section-2{   
-        background-image: linear-gradient(135deg, #FCCF31 10%, #F55555 100%);
-}
-.section-3{   
-    background-color: #FF3CAC;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-}
-
-.section-4{   
-      background-image: linear-gradient(135deg, #E8D07A 0%, #5312D6 100%);
-}
-
-h1 {
-  text-align: center;
-  color: white;
-  font-size: calc(1rem + 3vw);
-}
 </style>
 
 <section class="section-1">
+  <div>
     <h1>Hi, I'm Alex Loughlin</h1>
-    <p>A front-end developer with four years experience in building well designed, beautiful and forward-thinking websites. I have worked with digital agencies and in-house teams, currently working for Drew London as their Front End Developer. I am in love with coffee, gaming and Vitra Design. </p>
-</section>
+    <h3>A front-end developer with four years experience in building well designed, beautiful and forward-thinking websites. I have worked with digital agencies and in-house teams, currently working for Drew London as their Front End Developer. I am in love with coffee, gaming and Vitra Design. </h3>
+  </div>
+ </section>
 <section class="section-2">
         <h1>Section Two</h1>
 </section>
