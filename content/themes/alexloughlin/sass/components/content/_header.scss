@@ -1,0 +1,34 @@
+
+.cd-hero {
+	height: 300px;
+    display: flex;
+    align-items: center;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+	
+	@media (min-width: 768px){
+		.cd-hero{height: 400px;}
+	}
+	@media (min-width: 1024px){
+		.cd-hero{height: 500px;}
+	}
+	
+.cd-hero .cd-hero-content {background-color: transparent;}
+
+.hero---title{ 
+    background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
+    max-width: 600px;
+    width: 45%;
+    padding: 50px;
+
+    h1{
+        color: #fff;font-weight: 700;font-size: 40px;
+        margin-bottom: 0.5rem;
+    }
+    p{
+        margin-top: 0;
+    }
+}

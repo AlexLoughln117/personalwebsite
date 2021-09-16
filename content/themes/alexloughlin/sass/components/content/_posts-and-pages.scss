@@ -30,8 +30,9 @@
 	}
 }
 
+// HOME PAGE TEMPLATE CSS---------------------
+
 .page-template-template-home{
-	font-family: sans-serif;
 	-ms-scroll-snap-type: mandatory;
 		scroll-snap-type: mandatory;
 	-ms-scroll-snap-points-y: repeat(100vh);
@@ -50,19 +51,33 @@
 		flex-direction: column;
 
 		div{
-			max-width: 800px;
+			max-width: 1200px;
 			margin: 0 auto;
+			width: 100%;
 		}
 		h1 {
-			text-align: center;
 			color: white;
-			font-size: calc(1rem + 3vw);
-			margin-bottom: 0px;
+			font-weight: 900;
+			font-size: 70px;
+			line-height: .96;
+			letter-spacing: .02em;
+			text-transform: uppercase;
+			margin-bottom: 1.5rem;
 		  }
 		  h3{
 			  color: white;
 			  margin-top: 0px;
+			  max-width: 800px;
 		  }
+		  a{
+			  color: white;
+			  text-decoration: underline;
+			  font-weight: bold;
+		  }
+	  }
+
+	  .section-inner{
+		  text-align: left;
 	  }
 	  
 	  .section-1{   
@@ -80,6 +95,54 @@
 	  .section-4{   
 			background-image: linear-gradient(135deg, #E8D07A 0%, #5312D6 100%);
 	  }
-	  
 	 
+}
+
+// ALL GAMES CSS ----------------
+
+.all-games{
+	max-width: 600px;
+	margin: 0 auto;
+
+	.entry-content{
+		a{
+			color:#000;
+		}
+	}
+
+	h2{
+		margin-bottom: 5px;
+		font-size: 26px;
+		font-weight: 500;
+		line-height: 40px;
+		margin-top: 5px;
+	}
+
+	hr{
+		color: #203640;
+	}
+
+	time{
+		color: #636A6D;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+.tags{
+	a{
+		text-decoration: none;
+		display: inline-block;
+		padding: 2px 8px;
+		border-radius: 8px;
+		margin-bottom: 8px;
+		margin-right: 8px;
+		background: #44B6E7;
+		color: white;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 500;
+		border-bottom: none;
+		width: fit-content;
+	}
 }

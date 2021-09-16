@@ -19,3 +19,12 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
+
+a{
+	color: #000;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+}

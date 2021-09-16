@@ -48,6 +48,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -590,6 +596,14 @@ input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
 }
 
+a {
+	color: #000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -759,6 +773,104 @@ textarea {
 	color: #000;
 }
 
+.site-title a {
+	color: #000 !important;
+	font-weight: bolder !important;
+	font-size: 1.5rem !important;
+	border: solid;
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-radius: 1px;
+	border-width: 2.2px;
+	padding: 5px 40px;
+	align-content: left;
+	top: 2%;
+	right: 30%;
+	box-shadow: 3px 5px 0px 0px #000;
+	line-height: normal;
+}
+
+.site-footer {
+	margin-top: 5rem;
+}
+
+.site-footer .site-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.site-footer .site-info .page-link {
+	margin-right: 12px;
+}
+
+.site-footer .site-info .page-link:last-of-type {
+	margin-right: 0;
+}
+
+.site-footer a {
+	color: #000;
+}
+
+.site-footer .socials {
+	margin-top: 1.5rem;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #eee;
+	box-sizing: content-box;
+}
+
+/* Header
+--------------------------------------------- */
+.cd-hero {
+	height: 300px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+	.cd-hero {
+		height: 400px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.cd-hero {
+		height: 500px;
+	}
+}
+
+.cd-hero .cd-hero-content {
+	background-color: transparent;
+}
+
+.hero---title {
+	background-image: linear-gradient(135deg, #FCCF31 10%, #F55555 100%);
+	max-width: 600px;
+	width: 45%;
+	padding: 50px;
+}
+
+.hero---title h1 {
+	color: #fff;
+	font-weight: 700;
+	font-size: 40px;
+	margin-bottom: 0.5rem;
+}
+
+.hero---title p {
+	margin-top: 0;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -795,7 +907,6 @@ textarea {
 }
 
 .page-template-template-home {
-	font-family: sans-serif;
 	-ms-scroll-snap-type: mandatory;
 	scroll-snap-type: mandatory;
 	-ms-scroll-snap-points-y: repeat(100vh);
@@ -817,20 +928,35 @@ textarea {
 }
 
 .page-template-template-home section div {
-	max-width: 800px;
+	max-width: 1200px;
 	margin: 0 auto;
+	width: 100%;
 }
 
 .page-template-template-home section h1 {
-	text-align: center;
 	color: white;
-	font-size: calc(1rem + 3vw);
-	margin-bottom: 0px;
+	font-weight: 900;
+	font-size: 70px;
+	line-height: .96;
+	letter-spacing: .02em;
+	text-transform: uppercase;
+	margin-bottom: 1.5rem;
 }
 
 .page-template-template-home section h3 {
 	color: white;
 	margin-top: 0px;
+	max-width: 800px;
+}
+
+.page-template-template-home section a {
+	color: white;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.page-template-template-home .section-inner {
+	text-align: left;
 }
 
 .page-template-template-home .section-1 {
@@ -849,6 +975,49 @@ textarea {
 
 .page-template-template-home .section-4 {
 	background-image: linear-gradient(135deg, #E8D07A 0%, #5312D6 100%);
+}
+
+.all-games {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.all-games .entry-content a {
+	color: #000;
+}
+
+.all-games h2 {
+	margin-bottom: 5px;
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 40px;
+	margin-top: 5px;
+}
+
+.all-games hr {
+	color: #203640;
+}
+
+.all-games time {
+	color: #636A6D;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.tags a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 8px;
+	margin-bottom: 8px;
+	margin-right: 8px;
+	background: #44B6E7;
+	color: white;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	border-bottom: none;
+	width: fit-content;
 }
 
 /* Comments

@@ -128,3 +128,53 @@
 
 	}
 }
+
+.site-title a{
+	color: #000 !important;
+    font-weight: bolder !important;
+    font-size: 1.5rem !important;
+    border: solid;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-radius: 1px;
+    border-width: 2.2px;
+    padding: 5px 40px;
+    align-content: left;
+    top: 2%;
+    right: 30%;
+    box-shadow: 3px 5px 0px 0px #000;
+    line-height: normal;
+}
+
+.site-footer{
+	margin-top: 5rem;
+	.site-info{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.page-link{
+			margin-right: 12px;
+		}
+		.page-link:last-of-type{
+			margin-right: 0;
+		}
+	}
+
+	a{
+		color: #000;
+	}
+
+	.socials{
+		margin-top: 1.5rem;
+	}
+}
+
+hr{
+	border: 0;
+	border-top: 1px solid #eee;
+	box-sizing: content-box;
+}
