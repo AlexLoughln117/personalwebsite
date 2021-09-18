@@ -1,11 +1,18 @@
-<section class="games-ctn">
+
+
+
+<section class="games-ctn blog-ctn">
     <div class="container">
         <div class="all-games">
+
+        <div class="blog-header">
+            <h1 class="" style=""><?php echo get_the_title() ?></h1>
+        </div>
 
              <?php   $args = array(
                     'post_type' => 'post',
                     'post_status' => 'publish',
-                    'category_name' => 'videogames',
+                    'category_name' => 'thoughts',
                     'posts_per_page' => -1,
                 );
                 $arr_posts = new WP_Query( $args );

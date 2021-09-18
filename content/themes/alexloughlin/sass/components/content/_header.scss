@@ -4,9 +4,9 @@
     display: flex;
     align-items: center;
 	width: 100%;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+	background-repeat: no-repeat!important;
+	background-position: center center!important;
+	background-size: cover!important;
 }
 	
 	@media (min-width: 768px){
@@ -16,7 +16,23 @@
 		.cd-hero{height: 500px;}
 	}
 	
-.cd-hero .cd-hero-content {background-color: transparent;}
+.cd-hero .cd-hero-content {
+    background-color: transparent;    
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.header-logo-ctn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: fit-content;
+}
+.header-logo{
+    max-width: 30%;
+    height: auto;
+}
 
 .hero---title{ 
     background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
@@ -26,9 +42,34 @@
 
     h1{
         color: #fff;font-weight: 700;font-size: 40px;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0rem;
+        margin-top: 0px;
     }
     p{
-        margin-top: 0;
+        margin: 0;
+        color: #fff;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .entry-meta, time, .byline , .author a{
+        color: #fff;
+    }
+    .entry-meta{
+        margin-top: 12px;
+    }
+}
+
+.page-template-template-work{
+    .hero---title{
+        background-color: #21D4FD;
+        background-image: linear-gradient(
+    19deg, #21D4FD 0%, #B721FF 100%);
+    }
+}
+
+.blog-header{
+    h1{
+        font-weight: 700;
+        font-size: 40px;
     }
 }

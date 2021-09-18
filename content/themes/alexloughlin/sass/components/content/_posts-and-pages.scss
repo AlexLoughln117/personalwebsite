@@ -39,6 +39,13 @@
 		scroll-snap-points-y: repeat(100vh);
 	-ms-scroll-snap-type: y mandatory;
 		scroll-snap-type: y mandatory;
+
+	.section-real-link{
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	
 	section {
 		padding: 1rem;
 		height: 100vh;
@@ -55,7 +62,7 @@
 			margin: 0 auto;
 			width: 100%;
 		}
-		h1 {
+		h2{
 			color: white;
 			font-weight: 900;
 			font-size: 70px;
@@ -63,16 +70,27 @@
 			letter-spacing: .02em;
 			text-transform: uppercase;
 			margin-bottom: 1.5rem;
+			margin-top: 0;
 		  }
 		  h3{
 			  color: white;
 			  margin-top: 0px;
 			  max-width: 800px;
 		  }
-		  a{
+		  .section-fake-link{
 			  color: white;
-			  text-decoration: underline;
 			  font-weight: bold;
+			  display: flex;
+			  align-items: center;
+			  font-size: 18px;
+
+			  span{
+				  margin-left: 6px;
+			  }
+
+			  &:hover{
+				  text-decoration: underline;
+			  }
 		  }
 	  }
 
@@ -95,8 +113,123 @@
 	  .section-4{   
 			background-image: linear-gradient(135deg, #E8D07A 0%, #5312D6 100%);
 	  }
+
+	  .section{
+
+		h2{
+			-webkit-transform: translate3d(0,40px,0);
+			transform: translate3d(0,40px,0);
+			-webkit-transition: -webkit-transform 0.35s;
+			 transition: transform 0.35s;
+			 padding: 0 !important;
+			 margin-bottom: 0;
+	   }
+        h3, .section-fake-link{
+			opacity: 0;-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;transition: opacity 0.2s, transform 0.35s;
+		transition-duration: 0.2s, 0.35s;transition-delay: 0s, 0s;margin-bottom: 0px;
+	   }
+
+	   &:hover{
+		h2 { 
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+		h3, .section-fake-link {
+			-webkit-transition-delay: 0.05s;transition-delay: 0.05s;-webkit-transition-duration: 0.35s;transition-duration: 0.35s;
+			opacity: 1;-webkit-transform: translate3d(0,40px,0);transform: translate3d(0,15px,0);
+		   }
+	   }
+	}
+
+	.home-section-1{
+		h2{
+			-webkit-transform:none;
+			transform: none;
+			-webkit-transition: none;
+			 transition: transform 0.35s;
+			 padding: 0 !important;
+			 margin-bottom: 25px;
+	   }
+		h3, .section-fake-link{
+			opacity: 1;
+	   }
+	   &:hover{
+		h2 { 
+			-webkit-transform: none;
+			transform: none;
+		}
+		h3, .section-fake-link {
+			-webkit-transition-delay: 0.05s;
+			transition-delay: 0.05s;-webkit-transition-duration: 0.35s;
+			transition-duration: 0.35s;
+			opacity: 1;
+			-webkit-transform: none;transform: none;
+		   }
+	   }
+	}
 	 
 }
+
+.scroll-ctn {
+    position: absolute;
+    bottom: 10%;
+    z-index: 2;
+	width: 30px!important;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+.icon-scroll {
+    width: 30px;
+    height: 44px;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 2px #c2edff;
+    border-radius: 25px;
+}
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #c2edff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+@-webkit-keyframes scroll {
+	0% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	  -webkit-transform: translateY(28px);
+			  transform: translateY(28px);
+	}
+  }
+  @keyframes scroll {
+	0% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	  -webkit-transform: translateY(28px);
+			  transform: translateY(28px);
+	}
+  }
+
+ 
+	
+	
 
 // ALL GAMES CSS ----------------
 
@@ -129,8 +262,7 @@
 	}
 }
 
-.tags{
-	a{
+.single-tag{
 		text-decoration: none;
 		display: inline-block;
 		padding: 2px 8px;
@@ -144,5 +276,83 @@
 		font-weight: 500;
 		border-bottom: none;
 		width: fit-content;
+}
+
+// SINGLE POST CSS------------------
+
+.post, .post-navigation{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.post-navigation{
+	display: none;
+}
+
+.post{
+	margin-top: 45px;
+}
+
+// ALL WORK PAGE CSS ----------------
+.all-work-ctn{
+	display: flex;
+	justify-content: space-between;
+
+	.entry-content{
+		a{
+			color:#000;
+		}
+	}
+}
+
+.single-work{
+	width: 48%;
+	text-align: center;
+
+	&:hover{
+		text-decoration: none;
+	}
+
+	.entry-content{
+		width: 80%;
+		margin: 0 auto;
+		color: #000;
+	}
+
+	h2{
+		color:#000;
+		font-size: 32px;
+		margin-bottom: 0;
+	}
+}
+
+.section-fake-link{
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.allwork-logo-ctn{
+	background-color: #f6f6f6;
+    width: 100%;
+    padding: 25px 0;
+    margin-bottom: 10px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// SINGLE WORK POST CSS--------
+
+.category-work{
+	.wp-block-image{
+		margin-bottom: 60px;
+		border-top: 2px solid #000;
+		padding-top: 30px;
+	}
+	.wp-block-image:first-of-type{
+		margin-top: 30px;
+		border-top: 0px solid #000;
 	}
 }

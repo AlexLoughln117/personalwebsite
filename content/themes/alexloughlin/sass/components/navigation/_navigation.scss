@@ -1,6 +1,6 @@
 .main-navigation {
 	display: block;
-	width: 100%;
+	width: fit-content;
 
 	ul {
 		display: none;
@@ -113,6 +113,13 @@
 	align-items: center;
 	justify-content: center;
 	padding: 25px 0px;
+
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 50px;
+	}
 }
 
 .site-title{
@@ -132,7 +139,7 @@
 .site-title a{
 	color: #000 !important;
     font-weight: bolder !important;
-    font-size: 1.5rem !important;
+    font-size: 15px !important;
     border: solid;
     border-top-width: medium;
     border-right-width: medium;
@@ -177,4 +184,20 @@ hr{
 	border: 0;
 	border-top: 1px solid #eee;
 	box-sizing: content-box;
+}
+
+.menu-item {
+	
+	margin-right: 15px;
+	
+	a{
+		color: #000;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.menu-item:last-of-type{
+	margin-right: 0;
 }

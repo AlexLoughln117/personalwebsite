@@ -17,6 +17,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 	<?php wp_head(); ?>
 </head>
 
@@ -46,13 +51,13 @@
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 
-			<!-- <nav id="site-navigation" class="main-navigation">
+			 <nav id="site-navigation" class="main-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'alexloughlin' ); ?></button>
 				<?php
 				wp_nav_menu(
 					array(
 						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
+						'menu_id'        => 'main-menu',
 					)
 				);
 				?>

@@ -22,49 +22,58 @@ html {
 }
 </style>
 
-<section class="section-1">
-  <div class="section-inner">
-    <h1>Hi, I'm Alex Loughlin</h1>
-    <h3>A front-end developer with four years experience in building well designed, beautiful and forward-thinking websites. I have worked with digital agencies and in-house teams, currently working for Drew London as their Lead Developer. I am in love with coffee, gaming and Vitra Design. </h3>
-  </div>
- </section>
-<section class="section-2">
-        <div class="section-inner">
-           <h1>Get in Touch</h1>
-           <h3>Looking to to send me a message about work or anything use my email below.</h3>
-           <a href="mailtio:aloughlin711@gmail.com">Email me</a>
-        </div>
-</section>
-<section class="section-3">
-        <div class="section-inner">
-                <h1>Web Work</h1>
-                <h3>Click through to see a sample of web projects I have worked on.</h3>
-                <a href="">See work</a>
-        </div>
-</section>
-<section class="section-4">
-        <div class="section-inner">
-                <h1>What I'm Playing</h1>
-                <h3>Thoughts on the games I'm currently playing.</h3>
-                <a href="">See the list</a>
-        </div>
-</section>
-<!-- <section style="background-color: black">
-        <h1>Section Five</h1>
-</section> -->
+<?php 
+        if( have_rows('sections') ): ?>
+
+                <?php while( have_rows('sections') ) : the_row(); 
+                    
+                    $backgroundcolour = get_sub_field('colour');
+                    $gradient = get_sub_field('background_gradient');
+                
+                ?>
+
+                <?php if( get_sub_field('link') ): ?>
+                        <a class="section-real-link" href="<?php echo get_sub_field('link'); ?>">
+                 <?php endif; ?>
+
+                <section id="" class="section home-section-<?php echo get_row_index(); ?>" style="background-color:<?php echo $backgroundcolour ?>;<?php echo $gradient ?>">
+                        <div class="section-inner">
+                                <h2 class=""><?php echo get_sub_field('title'); ?></h2>
+                                <h3><?php echo get_sub_field('copy'); ?></h3>
+                                <?php if( get_sub_field('link') ): ?>
+                                    <p class="section-fake-link"><?php echo get_sub_field('link_text'); ?>   ></p>
+                                <?php endif; ?>
+                        </div>
+                        <div class="scroll-ctn">
+                             <div class="icon-scroll"></div>
+                        </div>
+                </section>
+
+                <?php if( get_sub_field('link') ): ?>
+                        </a>
+                 <?php endif; ?>
+
+                <?php endwhile; ?>
+
+
+        <?php else :
+        // Do something...
+        endif; 
+?>
 
 <script type="text/javascript">
-	const gra = function (min, max) {
-	return Math.random() * (max - min) + min;
-		};
-		const init = function () {
-			let items = document.querySelectorAll("section");
-			for (let i = 0; i < items.length; i++) {
+	// const gra = function (min, max) {
+	// return Math.random() * (max - min) + min;
+	// 	};
+	// 	const init = function () {
+	// 		let items = document.querySelectorAll("section");
+	// 		for (let i = 0; i < items.length; i++) {
 				
-			}
-			cssScrollSnapPolyfill();
-		};
-		init();
+	// 		}
+	// 		cssScrollSnapPolyfill();
+	// 	};
+	// 	init();
+             
 </script>
 
 
