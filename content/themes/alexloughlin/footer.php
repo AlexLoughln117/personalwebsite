@@ -44,7 +44,7 @@
     <a class="fab-action fab-action-2" href="mailto:aloughlin711@gmail.com">
 	   <img src="<?php echo get_template_directory_uri() ?>/assets/icons/message.png" alt="">
     </a>
-    <a class="fab-action fab-action-3" href="https://www.linkedin.com/in/alex-loughlin-806626124/">
+    <a class="fab-action fab-action-3" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alex-loughlin-806626124/">
 		  <img src="<?php echo get_template_directory_uri() ?>/assets/icons/linkedin.png" alt="">
     </a>
     <!-- <a class="fab-action fab-action-4">
