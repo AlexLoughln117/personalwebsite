@@ -1,3 +1,8 @@
+// Media Breakpoints
+$breakpoint-phone: 767px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;
+
 body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
 }
@@ -6,9 +11,9 @@ body {
 	max-width: 1000px;
 	margin: 0 auto;
 
-	@media only (max-width: 1200px){
-		padding: 0 25px;
-	}
+	@media (max-width: 1200px){
+		padding: 0 15px;
+	 }
 }
 
 .site-footer{
@@ -28,12 +33,12 @@ body {
 	position: absolute;
 	bottom: -1rem;
 	right: -1rem;
-	width: 3.6rem;
-    height: 3.6rem;
+	width: 3.4rem;
+    height: 3.4rem;
 	background: blue;
 	border-radius: 50%;
 	background: #5312D6;
-	box-shadow: 0px 5px 20px #81a4f1;
+	// box-shadow: 0px 5px 20px #81a4f1;
 	transition: all 0.3s ease;
 	z-index: 1;
 	cursor: pointer;
@@ -57,6 +62,7 @@ body {
 	left: 5%;
 	top: 5%;
 	background-color: rgba(255, 255, 255, 0.2);
+	border: 0px solid;
   }
   .fab:hover {
 	background: #B721FF;
@@ -65,8 +71,8 @@ body {
   
   .fab-dots {
 	position: absolute;
-	height: 8px;
-	width: 8px;
+	height: 6px;
+	width: 6px;
 	background-color: white;
 	border-radius: 50%;
 	top: 50%;

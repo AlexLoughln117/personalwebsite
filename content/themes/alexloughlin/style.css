@@ -54,6 +54,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+	.container {
+		padding: 0 35px;
+	}
+}
+
+@media (max-width: 700px) {
+	.container {
+		padding: 0 25px;
+	}
+}
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -473,7 +485,7 @@ body {
 
 @media (max-width: 1200px) {
 	.site-main, .site-info {
-		padding: 0 25px;
+		padding: 0 15px;
 	}
 }
 
@@ -495,12 +507,11 @@ body {
 	position: absolute;
 	bottom: -1rem;
 	right: -1rem;
-	width: 3.6rem;
-	height: 3.6rem;
+	width: 3.4rem;
+	height: 3.4rem;
 	background: blue;
 	border-radius: 50%;
 	background: #5312D6;
-	box-shadow: 0px 5px 20px #81a4f1;
 	transition: all 0.3s ease;
 	z-index: 1;
 	cursor: pointer;
@@ -523,6 +534,7 @@ body {
 	left: 5%;
 	top: 5%;
 	background-color: rgba(255, 255, 255, 0.2);
+	border: 0px solid;
 }
 
 .fab:hover {
@@ -532,8 +544,8 @@ body {
 
 .fab-dots {
 	position: absolute;
-	height: 8px;
-	width: 8px;
+	height: 6px;
+	width: 6px;
 	background-color: white;
 	border-radius: 50%;
 	top: 50%;
@@ -772,12 +784,16 @@ input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
 }
 
-a {
-	color: #000;
+main a, #page a, .site a {
+	color: #000 !important;
 }
 
-a:hover {
+main a:hover, #page a:hover, .site a:hover {
 	text-decoration: underline;
+}
+
+.site:hover {
+	text-decoration: none !important;
 }
 
 input[type="text"],
@@ -1036,6 +1052,13 @@ hr {
 	background-size: cover !important;
 }
 
+@media (max-width: 768px) {
+	.cd-hero {
+		height: fit-content;
+		background-image: none !important;
+	}
+}
+
 @media (min-width: 768px) {
 	.cd-hero {
 		height: 400px;
@@ -1052,19 +1075,28 @@ hr {
 	background-color: transparent;
 	display: flex;
 	justify-content: space-between;
-	opacity: 0;
+	opacity: 1;
 }
 
 .header-logo-ctn {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	width: fit-content;
+	height: 249px;
+	width: 50%;
+}
+
+@media (max-width: 767px) {
+	.header-logo-ctn {
+		justify-content: center;
+		display: none;
+	}
 }
 
 .header-logo {
-	max-width: 30%;
+	max-width: 50%;
 	height: auto;
+	max-height: 200px;
 }
 
 .hero---title {
@@ -1082,6 +1114,12 @@ hr {
 	margin-top: 0px;
 }
 
+@media (max-width: 768px) {
+	.hero---title h1 {
+		line-height: 1.2;
+	}
+}
+
 .hero---title p {
 	margin: 0;
 	color: #fff;
@@ -1095,6 +1133,14 @@ hr {
 
 .hero---title .entry-meta {
 	margin-top: 12px;
+}
+
+@media (max-width: 767px) {
+	.hero---title {
+		width: 90%;
+		margin: 0 auto;
+		padding: 50px 25px;
+	}
 }
 
 .page-template-template-work .hero---title {
@@ -1152,7 +1198,7 @@ hr {
 }
 
 .page-template-template-home .section-real-link:hover {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 .page-template-template-home section {
@@ -1182,6 +1228,12 @@ hr {
 	text-transform: uppercase;
 	margin-bottom: 1.5rem;
 	margin-top: 0;
+}
+
+@media (max-width: 767px) {
+	.page-template-template-home section h2 {
+		font-size: 55px;
+	}
 }
 
 .page-template-template-home section h3 {
@@ -1240,6 +1292,14 @@ hr {
 	margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+	.page-template-template-home .section h2 {
+		-webkit-transform: translate3d(0, 0px, 0);
+		transform: translate3d(0, 0px, 0);
+		margin-bottom: 25px;
+	}
+}
+
 .page-template-template-home .section h3, .page-template-template-home .section .section-fake-link {
 	opacity: 0;
 	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
@@ -1247,6 +1307,12 @@ hr {
 	transition-duration: 0.2s, 0.35s;
 	transition-delay: 0s, 0s;
 	margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+	.page-template-template-home .section h3, .page-template-template-home .section .section-fake-link {
+		opacity: 1;
+	}
 }
 
 .page-template-template-home .section:hover h2 {
@@ -1311,7 +1377,7 @@ hr {
 	margin-left: -15px;
 	top: 50%;
 	margin-top: -35px;
-	box-shadow: inset 0 0 0 2px #c2edff;
+	box-shadow: inset 0 0 0 2px #2B86C5;
 	border-radius: 25px;
 }
 
@@ -1319,7 +1385,7 @@ hr {
 	content: '';
 	width: 8px;
 	height: 8px;
-	background: #c2edff;
+	background: #2B86C5;
 	margin-left: -4px;
 	top: 8px;
 	border-radius: 4px;
@@ -1380,6 +1446,12 @@ hr {
 	line-height: 24px;
 }
 
+@media (max-width: 768px) {
+	.all-games {
+		max-width: 90%;
+	}
+}
+
 .single-tag {
 	text-decoration: none;
 	display: inline-block;
@@ -1407,6 +1479,13 @@ hr {
 
 .post {
 	margin-top: 45px;
+	margin-bottom: 85px;
+}
+
+@media (max-width: 767px) {
+	.post {
+		max-width: 90%;
+	}
 }
 
 .all-work-ctn {
@@ -1419,14 +1498,27 @@ hr {
 	color: #000;
 }
 
+@media (max-width: 768px) {
+	.all-work-ctn {
+		justify-content: center;
+		margin-top: 45px;
+	}
+}
+
 .single-work {
 	width: 48%;
 	text-align: center;
 	margin-bottom: 35px;
 }
 
+@media (max-width: 768px) {
+	.single-work {
+		width: 95%;
+	}
+}
+
 .single-work:hover {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 .single-work .entry-content {
@@ -1465,6 +1557,31 @@ hr {
 .category-work .wp-block-image:first-of-type {
 	margin-top: 30px;
 	border-top: 0px solid #000;
+}
+
+.archive .archive-all {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.archive .archive-all h2 {
+	margin-bottom: 0;
+	margin-bottom: 5px;
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 40px;
+}
+
+.archive .archive-all .entry-content {
+	margin-top: 0;
+}
+
+.archive a {
+	text-decoration: none;
+}
+
+.entry-title a {
+	text-decoration: none;
 }
 
 /* Comments

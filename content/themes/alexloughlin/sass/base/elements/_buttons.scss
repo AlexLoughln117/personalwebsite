@@ -20,11 +20,21 @@ input[type="submit"] {
 	}
 }
 
-a{
-	color: #000;
-
-	&:hover {
-		text-decoration: underline;
+main, #page, .site{
+    a{
+		color: #000!important;
+	
+		&:hover {
+			text-decoration: underline;
+		}
+	
 	}
+}
 
+.site{
+	
+		&:hover {
+			text-decoration: none!important;
+		}
+	
 }

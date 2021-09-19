@@ -7,6 +7,13 @@
 	background-repeat: no-repeat!important;
 	background-position: center center!important;
 	background-size: cover!important;
+
+   
+
+    @media (max-width: $breakpoint-tablet){
+       height: fit-content;
+       background-image: none!important;
+    }
 }
 	
 	@media (min-width: 768px){
@@ -20,18 +27,25 @@
     background-color: transparent;    
     display: flex;
     justify-content: space-between;
-    opacity: 0;
+    opacity: 1;
 }
 
 .header-logo-ctn{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: fit-content;
+    height: 249px;
+    width: 50%;
+
+    @media (max-width: $breakpoint-phone){
+        justify-content:center;
+        display:none
+    }
 }
 .header-logo{
-    max-width: 30%;
+    max-width: 50%;
     height: auto;
+    max-height: 200px;
 }
 
 .hero---title{ 
@@ -44,6 +58,10 @@
         color: #fff;font-weight: 700;font-size: 40px;
         margin-bottom: 0rem;
         margin-top: 0px;
+
+        @media (max-width: $breakpoint-tablet){
+            line-height: 1.2;
+        }
     }
     p{
         margin: 0;
@@ -56,6 +74,12 @@
     }
     .entry-meta{
         margin-top: 12px;
+    }
+
+    @media (max-width: $breakpoint-phone){
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px 25px;
     }
 }
 

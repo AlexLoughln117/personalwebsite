@@ -1,5 +1,5 @@
-<section class="cd-hero" style=" <?php if ( has_post_thumbnail() ) { ?>
-background:linear-gradient(0deg, rgba(46, 49, 49, 0.3), rgba(46, 49, 49, 0.3)), url(<?php echo the_post_thumbnail_url('full') ?> );">
+<section class="cd-hero"  <?php if ( has_post_thumbnail() ) { ?>
+    style=" background:linear-gradient(0deg, rgba(46, 49, 49, 0.3), rgba(46, 49, 49, 0.3)), url(<?php echo the_post_thumbnail_url('full') ?> );
 <?php } ?> ">
               <div class="container">
                   <div class="cd-hero-content animate__animated ">
@@ -33,7 +33,7 @@ background:linear-gradient(0deg, rgba(46, 49, 49, 0.3), rgba(46, 49, 49, 0.3)), 
               </div>      
 </section>
 
-<script>
+<!-- <script>
        const observerPageHeader = new IntersectionObserver(entries => {
                         entries.forEach(entry => {
                                 const pageHeaderWrapper = entry.target.querySelector(
@@ -50,4 +50,4 @@ background:linear-gradient(0deg, rgba(46, 49, 49, 0.3), rgba(46, 49, 49, 0.3)), 
                  });
 
                  observerPageHeader.observe(document.querySelector('.cd-hero'));
-</script>
+</script> -->
