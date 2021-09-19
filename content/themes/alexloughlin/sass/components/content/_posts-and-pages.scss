@@ -279,7 +279,7 @@
 	}
 
 	@media (max-width: $breakpoint-tablet){
-        max-width: 90%;
+        max-width: 100%;
 	}
 
 }
@@ -355,6 +355,17 @@
 		width: 80%;
 		margin: 0 auto;
 		color: #000;
+
+		@media (max-width: $breakpoint-phone){
+			width: 100%;
+
+			p{
+				width: 80%;
+				margin: 0 auto;
+				margin-top: 16px;
+				margin-bottom: 24px;
+			}
+		}
 	}
 
 	h2{

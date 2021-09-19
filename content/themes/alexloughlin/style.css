@@ -1120,6 +1120,12 @@ hr {
 	}
 }
 
+@media (max-width: 767px) {
+	.hero---title h1 {
+		margin-bottom: 15px;
+	}
+}
+
 .hero---title p {
 	margin: 0;
 	color: #fff;
@@ -1137,7 +1143,7 @@ hr {
 
 @media (max-width: 767px) {
 	.hero---title {
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 		padding: 50px 25px;
 	}
@@ -1448,7 +1454,7 @@ hr {
 
 @media (max-width: 768px) {
 	.all-games {
-		max-width: 90%;
+		max-width: 100%;
 	}
 }
 
@@ -1525,6 +1531,18 @@ hr {
 	width: 80%;
 	margin: 0 auto;
 	color: #000;
+}
+
+@media (max-width: 767px) {
+	.single-work .entry-content {
+		width: 100%;
+	}
+	.single-work .entry-content p {
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 16px;
+		margin-bottom: 24px;
+	}
 }
 
 .single-work h2 {
