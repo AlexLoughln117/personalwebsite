@@ -52,15 +52,41 @@
 			</div><!-- .site-branding -->
 
 			 <nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'alexloughlin' ); ?></button>
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'main-menu',
-					)
-				);
-				?>
+				 <div class="menu-ctn" id="menulinks">
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'main-menu',
+							)
+						);
+						?>
+				 </div>
+				<a href="javascript:void(0);" class="icon menu-icon" onclick="myFunction()">
+					<p class="fa fa-bars">Menu</p>
+				</a>
 			</nav><!-- #site-navigation --> 
 		</div>
+		<div class="mobile-menu" id="mobmenu">
+	           	<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'main-menu',
+							)
+						);
+						?>
+		</div>
 	</header><!-- #masthead -->
+
+
+	<script>
+		function myFunction() {
+		var x = document.getElementById("mobmenu");
+		if (x.style.display === "block") {
+			x.style.display = "none";
+		} else {
+			x.style.display = "block";
+		}
+		}
+</script>

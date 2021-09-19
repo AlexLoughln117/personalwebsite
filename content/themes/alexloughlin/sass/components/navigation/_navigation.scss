@@ -121,6 +121,11 @@
 		height: 50px;
 	}
 
+
+	@media (max-width: 600px){
+		flex-direction: column;
+	}
+
 	
 }
 
@@ -202,4 +207,43 @@ hr{
 }
 .menu-item:last-of-type{
 	margin-right: 0;
+}
+
+
+.main-navigation .menu-icon{
+	display: none;
+	
+	p{
+		margin: 0;
+	}
+
+	@media (max-width: 600px){
+       display: inline;
+	}
+}
+
+.menu-ctn{
+	@media (max-width: 600px){
+		display: none;
+	 }
+}
+
+.mobile-menu{
+	display: none;
+	width: 100vw;
+	padding: 0 25px;
+	padding-top: 15px;
+
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li{
+		margin-bottom: 7px;
+	}
+	@media (max-width: 600px){
+		display: none;
+	 }
 }
