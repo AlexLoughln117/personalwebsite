@@ -79,7 +79,14 @@
     .entry-meta{
         margin-top: 12px;
     }
+    
+    @media (max-width: $breakpoint-desktop){
+        width: 100%;
+    }
 
+    @media (max-width: $breakpoint-tablet){
+        max-width: 100%;
+    }
    
 
     @media (max-width: $breakpoint-phone){

@@ -1190,6 +1190,18 @@ hr {
 	margin-top: 12px;
 }
 
+@media (max-width: 1200px) {
+	.hero---title {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero---title {
+		max-width: 100%;
+	}
+}
+
 @media (max-width: 767px) {
 	.hero---title {
 		width: 100%;
