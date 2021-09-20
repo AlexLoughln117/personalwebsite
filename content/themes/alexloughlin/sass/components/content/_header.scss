@@ -80,10 +80,24 @@
         margin-top: 12px;
     }
 
+   
+
     @media (max-width: $breakpoint-phone){
         width: 100%;
         margin: 0 auto;
         padding: 50px 25px;
+    }
+}
+
+.work-header{
+    .hero---title{
+        p{
+            margin-bottom: 10px;
+        }
+    }
+    .header-link{
+        color: #fff!important;
+        margin-top: 7px;
     }
 }
 

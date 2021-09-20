@@ -1198,6 +1198,15 @@ hr {
 	}
 }
 
+.work-header .hero---title p {
+	margin-bottom: 10px;
+}
+
+.work-header .header-link {
+	color: #fff !important;
+	margin-top: 7px;
+}
+
 .page-template-template-work .hero---title {
 	background-color: #21D4FD;
 	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
