@@ -1391,6 +1391,13 @@ hr {
 	transform: translate3d(0, 15px, 0);
 }
 
+@media (max-width: 768px) {
+	.page-template-template-home .section:hover h3, .page-template-template-home .section:hover .section-fake-link {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 .page-template-template-home .home-section-1 h2 {
 	-webkit-transform: none;
 	transform: none;

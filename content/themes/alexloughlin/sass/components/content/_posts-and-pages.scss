@@ -158,6 +158,10 @@
 		h3, .section-fake-link {
 			-webkit-transition-delay: 0.05s;transition-delay: 0.05s;-webkit-transition-duration: 0.35s;transition-duration: 0.35s;
 			opacity: 1;-webkit-transform: translate3d(0,40px,0);transform: translate3d(0,15px,0);
+
+			@media (max-width: $breakpoint-tablet){
+				-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);
+			}
 		   }
 	   }
 	}
