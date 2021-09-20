@@ -32,22 +32,3 @@
                  
               </div>      
 </section>
-
-<!-- <script>
-       const observerPageHeader = new IntersectionObserver(entries => {
-                        entries.forEach(entry => {
-                                const pageHeaderWrapper = entry.target.querySelector(
-                                '.cd-hero-content');
-
-                                if (entry.isIntersecting) {
-                                pageHeaderWrapper.classList.add('animate__fadeInLeft');
-                                return; // if we added the class, exit the function
-                                }
-
-                                // We're not intersecting, so remove the class!
-                                pageHeaderWrapper.classList.remove('animate__fadeInLeft');
-                        });
-                 });
-
-                 observerPageHeader.observe(document.querySelector('.cd-hero'));
-</script> -->
