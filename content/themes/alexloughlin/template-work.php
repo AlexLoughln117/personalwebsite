@@ -24,7 +24,7 @@ get_header(); ?>
                                     ?>
                                 </div><!-- .entry-meta -->
                             <?php endif; ?>
-                            <a class="header-link" style="color:#fff!important;" href="https://alexloughlin.com/content/uploads/2022/06/CV-AlexLoughlin-2022.pdf" target="_blank">View CV</a>
+                            <a class="header-link" style="color:#fff!important;" href="https://alexloughlin.com/content/uploads/2022/10/CV-AlexLoughlin-2022.pdf" target="_blank">View CV</a>
                     </div>
                     <?php if( get_field('logo') ): ?>
                        <?php   
